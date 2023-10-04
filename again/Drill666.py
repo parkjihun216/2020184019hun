@@ -92,6 +92,8 @@ def update_world():
            cx, cy = hx, hy #캐릭텅 위치를 목적지에 정확히 일치
            del points[0]
            set_new_target_arrow()
+    elif points: #목표 지점이 없는 상황에서, 새로운 목표 지점이 생기면
+        set_new_target_arrow()
 
 open_canvas(TUK_WIDTH, TUK_HEIGHT)
 hide_cursor()
